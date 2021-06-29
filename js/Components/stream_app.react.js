@@ -216,7 +216,7 @@ var StreamApp = React.createClass({
       case 'result-tag':
         console.log('background, result-tag' + JSON.stringify(data));
         this.modalShow()
-        StreamAPI.getDataValue(data.content);
+        StreamAPI.getDataValue(this.state.data[data.streamOrigin].query + ' ' + data.content);
         break
       case 'default': alert('nothing caught')
     }
@@ -470,12 +470,8 @@ var StreamApp = React.createClass({
 
     return (
       <div className="flux-streams-app" onClick={this.showSearch} onDragOver={this.preventDefault} onDrop={this.drop}>
-        <button className="btn btn-warning" onClick={this.openBookmarksModal}>Bookmarks</button>
-
         {search}
         {container}
-
-        <div className="bookmark-drop" onDragOver={this.preventDefault} onDrop={this.bookmarkDrop} style={{ display: this.state.showBookmarkDrop ? 'block' : 'none' }}>Drop Here To Bookmark</div>
 
         <Modal show={this.state.showModal} bsSize="small">
           <Modal.Body>
