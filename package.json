@@ -4,7 +4,7 @@
   "description": "Pricing component with flux",
   "main": "js/app.js",
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "babel-core": "^6.26.0",
     "babel-loader": "6.2.4",
     "flux": "^2.0.0",
