@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.15.3",
     "babel-core": "^6.26.0",
-    "babel-loader": "6.2.4",
+    "babel-loader": "9.1.0",
     "flux": "^2.0.0",
     "jsonp": "^0.2.1",
     "keymirror": "^0.1.1",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
-    "babel-loader": "^6.2.0",
+    "babel-loader": "^9.1.0",
     "babel-plugin-add-module-exports": "^0.1.2",
     "babel-plugin-react-html-attrs": "^2.0.0",
     "babel-plugin-transform-class-properties": "^6.3.13",
@@ -41,7 +41,7 @@
     "react-dom": "^0.14.6",
     "reactify": "^1.1",
     "watchify": "~3.7.0",
-    "webpack": "^1.15.0",
+    "webpack": "^5.74.0",
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
